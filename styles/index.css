@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /* font-family: "Quicksand", sans-serif; */
+  /* font-family: "Raleway", sans-serif; */
+
+  /* mixed style */
+  .border{
+    border: 2px solid steelblue;
+  }
+  .btn-secondary{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    background-color: orange;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 60px;
+  }
+  .btn-primary{
+    background-color: black;
+  }
+  .orange{
+    color: orange;
+  }
+  .skyblue{
+    color: skyblue;
+  }
+  .paste{
+    color: #05D4DF;
+  }
+  .violet{
+    columns: #5D58EF;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* header style */
+  header{
+    max-width: 1150px;
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
+  }
+  /* nav style */
+  .menu{
+    display: none;
+  }
+  ul{
+    gap: 30px;
+  }
+  nav li{
+    list-style: none;
+  }
+  nav a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  .bold{
+    font-weight: 700;
+  }
+  
+  /* banner style */
+  .banner{
+    align-items: center;
+  }
+  .banner-content{
+    max-width: 640px;
+  }
+  .banner-title{
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: black;
+  }
+  .section-description{
+    color: black;
+    font-size: 1.25rem;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* Media Query for small device */
+  @media screen and (max-width: 576px) {
+    nav h3, ul, nav button{
+        visibility: hidden;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+    .banner img{
+        max-width: 100%;
+        height: auto;
+    }
+  }
