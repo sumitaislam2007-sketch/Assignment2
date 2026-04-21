@@ -104,11 +104,11 @@
     max-width: 300px;
     padding: 50px 40px;
   }
-  .card h4{
+  .card h4, .stories h4{
     font-size: 1.5rem;
     color: #202020;
   }
-  .card-description{
+  .card-description, .stories p{
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 0.93rem;
@@ -125,6 +125,72 @@
   .card-3{
     background: linear-gradient(to bottom, #EEE1FF 0%, #FFFFFF 40%);
     border: 1px solid #F2E8FF;
+  }
+  .round{
+    background-color: orange;
+    border: none;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  /* stories style */
+  .stories{
+    font-family: "Quicksand", sans-serif;
+    
+    background: linear-gradient(to top, #fea1018a 0%, #FFFFFF 100%);
+    /* background-image: url(../assets/bg.png); */
+  }
+  .stories h3{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .stories-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    /* background: linear-gradient(to bottom, #FFFFFF 100%, #FEA301 0%), url(../assets/bg.png); */
+  }
+  .story{
+    border-radius: 16px;
+    background-color: #FFFFFF;
+  }
+  .story img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .story button{
+    font-size: 0.93rem;
+    font-weight: 500;
+    padding: 10px 18px;
+  }
+  .small-story{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+    margin-bottom: 20px;
+  }
+  .big-story h4{
+    font-size: 1.5rem;
+    margin: 50px 40px;
+  }
+  .big-story p{
+    padding: 0px 40px 70px 40px;
+  }
+   
+  .small-story h4{
+    font-size: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .stories button{
+    display: block;
+    margin: 0 auto;
   }
 
   /* Media Query for small device */
@@ -144,5 +210,17 @@
     .card-container{
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
+    }
+    .round{
+      display: none;
+    }
+    .stories-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .big-story{
+      display: none;
+    }
+    .small-story{
+      grid-template-columns: repeat(2, 1fr);
     }
   }
